@@ -17,7 +17,7 @@ int main() {
         int i, j;
         for (i = 0; i < limit - 1; i++) {
             for (j = 0; j < (limit - i) - 1; j++) {
-                if (numbersArray[j] > numbersArray[j + 1]) {
+                if (numbersArray[j] < numbersArray[j + 1]) {
                     int temp = numbersArray[j];
                     numbersArray[j] = numbersArray[j + 1];
                     numbersArray[j + 1] = temp;
